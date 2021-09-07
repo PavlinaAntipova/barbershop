@@ -1,0 +1,25 @@
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle--transparent {
+  color: $transparent-text-color;
+
+  &::before {
+    @extend %subtitle__before;
+    background-color: $transparent-text-color;
+  }
+}
+
+.subtitle--dark {
+  color: $primary-text-color;
+
+  &::before {
+    @extend %subtitle__before;
+    background-color: $primary-text-color;
+  }
+}

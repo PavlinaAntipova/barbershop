@@ -1,0 +1,24 @@
+.social-list__item {
+  display: none;
+  // Mobile
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.social-list__link {
+  @extend %social-link;
+}
+
+.social-list__link--decorative-line {
+  &::before {
+    @extend %subtitle__before;
+    background-color: $primary-text-color;
+  }
+}
+
+.social-list__link--padding-left {
+  padding-left: 80px;
+}

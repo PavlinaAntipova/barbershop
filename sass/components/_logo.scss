@@ -1,0 +1,12 @@
+.logo {
+  display: inline-block;
+  color: inherit;
+
+  @media screen and (max-width: 480px) {
+    color: $lighten-text-color;
+  }
+}
+
+.logo__icon {
+  fill: currentColor;
+}

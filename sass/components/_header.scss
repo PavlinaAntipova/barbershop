@@ -1,0 +1,90 @@
+.header {
+  padding-top: 40px;
+  background-color: transparent;
+  // Mobile
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+}
+
+.header__container {
+  // Mobile
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation {
+  // Mobile
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.navigation__item {
+  // Mobile
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  //   Desktop
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.contacts {
+  // Mobile
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+  //   Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.contacts__item {
+  // Mobile
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.contacts__link.button {
+  padding-right: 57px;
+  padding-left: 57px;
+}
