@@ -1,0 +1,16 @@
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.section__title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16em;
+  letter-spacing: 0.05em;
+}
+
+.section__title--light {
+  color: $lighten-text-color;
+}

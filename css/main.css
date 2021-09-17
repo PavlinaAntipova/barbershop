@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #303030;
   letter-spacing: 0.02em;
+  font-size: 16px;
 }
 
 h1,
@@ -67,22 +68,39 @@ address {
   margin-right: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 418px;
+    max-width: 448px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 690px;
+    width: 720px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
+}
+
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.section__title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16em;
+  letter-spacing: 0.05em;
+}
+
+.section__title--light {
+  color: #ffffff;
 }
 
 .logo {
@@ -103,6 +121,8 @@ address {
 .button {
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: inline-block;
   border: 1px solid #ff6c00;
   border-radius: 25px;
@@ -111,10 +131,16 @@ address {
   line-height: 1.33em;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:hover, .button:focus {
   background-color: #ff6c00;
+  color: #ffffff;
+}
+
+.button--light {
+  color: #ffffff;
 }
 
 .header {
@@ -223,11 +249,13 @@ address {
 }
 
 .subtitle {
+  display: block;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .subtitle--transparent {
@@ -351,5 +379,162 @@ address {
   max-width: 1125px;
   height: 580px;
   background-image: url();
+}
+
+.section__title--small {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .img-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-box {
+    margin-right: 30px;
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-box {
+    margin-right: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 570px;
+  }
+}
+
+.img-desktop {
+  margin-right: 30px;
+}
+
+.img-desktop:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .img-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-desktop {
+    display: block;
+    max-width: 270px;
+  }
+}
+
+.img-tablet {
+  margin-bottom: 30px;
+}
+
+.img-tablet:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .img-tablet {
+    display: block;
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-tablet {
+    display: none;
+  }
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86em;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.about-text--big {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.price-section {
+  background-color: #111319;
+  background-image: url(../image/price-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price-section {
+    background-image: url(../image/price-bg@2x.png);
+  }
+}
+
+.price-title {
+  margin-bottom: 44px;
+}
+
+.price-box {
+  padding: 30px;
+  margin-bottom: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+@media screen and (min-width: 1200px) {
+  .price-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-list {
+    -ms-flex-preferred-size: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+  }
+}
+
+.price-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 2.14em;
+  color: #9da4bd;
+}
+
+.price-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.price-list__item.price-list__item--margin {
+  margin-bottom: 20px;
+}
+
+.button-box {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

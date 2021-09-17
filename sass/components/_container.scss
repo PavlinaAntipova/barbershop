@@ -5,15 +5,15 @@
   margin-right: auto;
 
   //   Mobile
-  @media screen and (max-width: 480px) {
-    max-width: 418px;
+  @media screen and (max-width: 767px) {
+    max-width: 448px;
   }
   //   Tablet
   @media screen and (min-width: 768px) {
-    width: 690px;
+    width: 720px;
   }
   //   Desktop
   @media screen and (min-width: 1200px) {
-    width: 1170px;
+    width: 1200px;
   }
 }

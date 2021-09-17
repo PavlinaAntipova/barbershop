@@ -61,55 +61,77 @@
         <div class="container">
           
           <h1 class="subtitle subtitle--transparent" lang="en">A hair salon for men in Kyiv</h1>
-          <span>BarberShop</span>
+          <span class="section__title section__title--light">BarberShop</span>
           <p>Мы эксперты в модных мужских стрижках.
         Работаем быстро, осторожно и со вкусом.</p>
         </div>
 
       </section>
 
-      <section id="about">
-          <div class="container">
-              <ul class="list">
-                  <li><img src="./image/about-1.jpg" alt="Мужчине бреют бороду" width="270" height="445"></li>
-                  <li><img src="./image/about-2.jpg" alt="Мужчину подстригают" width="270" height="445"></li>
-              </ul>
-              <h2 class="subtitle subtitle--dark">О НАС</h2>
-              <span>Лучший Барбершоп
-            твоего города</span>
-            <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-            <p>Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
-            готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <a href="#footer" class="buttom-link">онлайн-запись</a>
+      <section class="section" id="about">
+          <div class="container about-container">
+            <div class="img-box">
+              <!-- Desktop -->
+              <img
+                srcset="./image/about-1-desktop-270.jpg 1x, ./image/about-1-desktop-540.jpg 2x, ./image/about-1-desktop-810.jpg 3x"
+                 class="img-desktop" src="./image/about-1-desktop-270.jpg" alt="">
+              <img
+                srcset="./image/about-2-desktop-270.jpg 1x, ./image/about-2-desktop-540.jpg 2x, ./image/about-2-desktop-810.jpg 3x"
+                 class="img-desktop" src="./image/about-2-desktop-270.jpg" alt="">
+
+                <!-- Tablet -->
+              <img
+                srcset="./image/about-1-tablet-330.jpg 1x, ./image/about-1-tablet-660.jpg 2x, ./image/about-1-tablet-990.jpg 3x"
+                  class="img-tablet" src="./image/about-1-tablet-330.jpg" alt="">
+              <img
+                srcset="./image/about-2-tablet-330.jpg 1x, ./image/about-2-tablet-660.jpg 2x, ./image/about-2-tablet-990.jpg 3x"
+                 class="img-tablet" src="./image/about-2-tablet-330.jpg" alt="">
+            </div>
+
+              <div class="content-box">
+                <h2 class="subtitle subtitle--dark">О НАС</h2>
+                <span class="section__title section__title--small">Лучший Барбершоп
+                  твоего города</span>
+                
+                <p class="about-text about-text--big">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                <p class="about-text">Мы команда, которая никогда не останавливается на достигнутом
+                  и жаждет перемен. И когда ты попадешь в руки нашего мастера,
+                  то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
+                  готовы усовершенствовать каждого, кто к нам приходит!</p>
+                <a href="#footer" class="button">онлайн-запись</a>
+              </div>
 
 
           </div>
 
       </section>
 
-      <section id="price">
+      <section class="section price-section" id="price">
         <div class="container">
         <span class="subtitle subtitle--transparent">Проведи время в компании лучших мастеров</span>
-        <h2>Услуги и цены</h2>
-        <ul class="list">
-          <li>Мужская стрижка <span>от 300 грн.</span></li>
-          <li>Стрижка бороды <span>от 200 грн.</span></li>
-          <li>Стрижка усов <span>от 200 грн.</span></li>
-          <li>Бритье опасной бритвой <span>от 200 грн.</span></li>
-        </ul>
-        <ul class="list">
-          <li>Cтрижка у стажера <span>от 50 грн.</span></li>
-          <li>Стрижка под насадку <span>от 200 грн.</span></li>
-          <li>Детская стрижка (до 12 лет) <span>от 300 грн.</span></li>
-          <li>Камуфлирование седины <span>от 200 грн.</span></li>
-        </ul>
-        <a href="#footer" class="buttom-link">онлайн-запись</a>
+        <h2 class="section__title section__title--light price-title">Услуги и цены</h2>
+        <div class="price-box">
+          <ul class="price-list">
+            <li class="price-list__item">Мужская стрижка <span class="price-list__price">от 300 грн.</span></li>
+            <li class="price-list__item">Стрижка бороды <span class="price-list__price">от 200 грн.</span></li>
+            <li class="price-list__item">Стрижка усов <span class="price-list__price">от 200 грн.</span></li>
+            <li class="price-list__item price-list__item--margin">Бритье опасной бритвой <span class="price-list__price">от 200 грн.</span></li>
+          </ul>
+          <ul class="price-list">
+            <li class="price-list__item">Cтрижка у стажера <span class="price-list__price">от 50 грн.</span></li>
+            <li class="price-list__item">Стрижка под насадку <span class="price-list__price">от 200 грн.</span></li>
+            <li class="price-list__item">Детская стрижка (до 12 лет) <span class="price-list__price">от 300 грн.</span></li>
+            <li class="price-list__item">Камуфлирование седины <span class="price-list__price">от 200 грн.</span></li>
+          </ul>
+        </div>
+        <div class="button-box"><a href="#footer" class="button button--light">онлайн-запись</a></div>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="container">
+          <span class="subtitle subtitle--dark">старая традиционная школа</span>
+          <h2 class="section__title">Почему приходят именно к нам?</h2>
+          <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
           <ul class="list">
             <li><p><span>600</span>Довольных клиентов в день</p></li> 
             <li><p><span>50</span>Наград за отличный сервис</p></li> 
@@ -117,16 +139,14 @@
             <li><p><span>100</span>Подарков постоянным клиентам</p></li>
             
           </ul>
-          <span class="subtitle subtitle--dark">старая традиционная школа</span>
-          <h2>Почему приходят именно к нам?</h2>
-          <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+          
           </div>
       </section>
-      <section id="barbers">
+      <section class="section" id="barbers">
         <div class="container">
           
           <span class="subtitle subtitle--dark">для настоящих ценителей атмосферы</span>
-          <h2>Наши мастера</h2>
+          <h2 class="section__title">Наши мастера</h2>
           <ul class="list">
             <li><img src="./image/barber-1.jpg" alt="Мужчина с тату стрижет" width="370" height="346">
               <h3>John Smith</h3>
@@ -160,7 +180,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="container">
           <!-- <h2>Галерея</h2> -->
           <span class="subtitle subtitle--dark">На латинском языке “барба” означает “борода”</span>
@@ -181,7 +201,7 @@
   <footer id="footer">
     <div class="container">
       <div class="form">
-      <h2>Онлайн-запись</h2>
+      <h2 class="section__title section__title--light">Онлайн-запись</h2>
       <form action="#">
         <input type="text" value="Имя">
         <input type="tel" value="Телефон">
@@ -190,7 +210,7 @@
       </form>
       </div>
       <div class="contacts">
-      <h2>Контакты</h2>
+      <h2 class="section__title section__title--light">Контакты</h2>
       <address class="address"><ul class="list">
         <li>ул. Васильковая, 7А
         Киев, 08132</li>
@@ -201,16 +221,14 @@
       <p>Ежедневно с 9:00 до 22:00</p>
       </div>
     </div>
-  </footer>
-  <div> 
-    <div class="container">
     <p>&copy; Copyright <span>2020</span></p>
     <ul class="list">
       <li><a href="#" class="link social-link">Instagram</a></li>
       <li><a href="#" class="link social-link">Youtube</a></li>
     </ul>
-    
-  </div>
+  </footer>
+ 
+  
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
