@@ -97,6 +97,7 @@ address {
   font-size: 42px;
   line-height: 1.16em;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 .section__title--light {
@@ -384,7 +385,6 @@ address {
 .section__title--small {
   display: block;
   font-size: 28px;
-  margin-bottom: 20px;
 }
 
 .about-container {
@@ -488,25 +488,51 @@ address {
 }
 
 .price-box {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 50px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .price-box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .price-box {
+    background-image: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .price-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
     -ms-flex-preferred-size: calc(100% / 2);
         flex-basis: calc(100% / 2);
+  }
+  .price-list:nth-of-type(1) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .price-list:nth-of-type(2) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
@@ -530,11 +556,64 @@ address {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .price-list:nth-of-type(1) .price-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .price-list__item.price-list__item--margin {
   margin-bottom: 20px;
 }
 
 .button-box {
   text-align: center;
+}
+
+.advantages-text {
+  font-size: 18px;
+  line-height: 1.66em;
+  color: #555555;
+  margin-bottom: 44px;
+}
+
+.advantages-list {
+  margin: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages-list__item {
+  -ms-flex-preferred-size: calc((100% - 15px * 4) / 2);
+      flex-basis: calc((100% - 15px * 4) / 2);
+  height: auto;
+  margin: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36em;
+  background-color: #f7f7f7;
+}
+
+.advantages-list__number-box {
+  margin-bottom: 20px;
+}
+
+.advantages-list__number-box span {
+  display: inline-block;
+  height: 100%;
+}
+
+.advantages-list__number {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
 }
 /*# sourceMappingURL=main.css.map */
