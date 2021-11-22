@@ -1,0 +1,30 @@
+.copyright {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.copyright__container {
+  display: flex;
+  // Mobile
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.copyright__text {
+  color: $darken-text-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36em;
+}

@@ -1,6 +1,43 @@
 .hero {
-  background-color: $primary-text-color;
-  max-width: 1125px;
+  position: relative;
+  top: -100px;
+  max-width: 1600px;
   height: 580px;
-  background-image: url();
+  background-color: #111319;
+  background-image: url(../image/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../image/hero-bg@2x.jpg);
+  }
+}
+
+.hero__container {
+  padding-top: 208px;
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 272px;
+  }
+}
+
+.hero__title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hero__text {
+  color: $darken-text-color;
+  line-height: 1.63em;
 }

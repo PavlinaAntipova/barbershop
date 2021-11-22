@@ -1,11 +1,29 @@
-.social-list__item {
-  display: none;
+.social-list {
+  display: block;
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-list--one-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-list__item--margin-bottom {
   // Mobile
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 24px;
     }
   }
+}
+
+.social-list__item--margin-right {
+  margin-right: 40px;
 }
 
 .social-list__link {
@@ -20,5 +38,5 @@
 }
 
 .social-list__link--padding-left {
-  padding-left: 80px;
+  padding-left: 82px;
 }

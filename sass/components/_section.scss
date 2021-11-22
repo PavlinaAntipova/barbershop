@@ -1,6 +1,38 @@
 .section {
   padding-top: 84px;
   padding-bottom: 84px;
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  //   Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.section--without-padding {
+  padding-top: 0;
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+  //   Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+  }
+}
+
+.section--bg-gray {
+  background-color: #f7f7f7;
+}
+
+.section--bg-dark-blue {
+  background-color: $dark-bg-color;
 }
 
 .section__title {
@@ -14,4 +46,21 @@
 
 .section__title--light {
   color: $lighten-text-color;
+}
+
+.section__title--big-margin {
+  margin-bottom: 44px;
+}
+
+.section__title--middle-margin {
+  margin-bottom: 40px;
+}
+
+.section__title--center {
+  text-align: center;
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }

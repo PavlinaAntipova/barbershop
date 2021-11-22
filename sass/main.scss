@@ -1,6 +1,7 @@
 @import './base/variables';
 @import './base/global-style';
 @import './base/placeholders';
+@import './base/visually-hidden';
 @import './components/container';
 @import './components/section';
 @import './components/logo';
@@ -13,3 +14,11 @@
 @import './components/about';
 @import './components/price';
 @import './components/advantages';
+@import './components/barbers';
+@import './components/social-links';
+@import './components/gallery';
+@import './components/footer';
+@import './components/form';
+@import './components/contacts';
+@import './components/copyright';
+@import './components/hero-slider';

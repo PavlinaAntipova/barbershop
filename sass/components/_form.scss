@@ -1,0 +1,81 @@
+.appointment {
+  //   Mobile
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.input-box {
+  margin-bottom: 44px;
+
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.appointment__name,
+.appointment__phone,
+.appointment__text {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $transparent-text-color;
+  color: $lighten-text-color;
+}
+
+.appointment__name,
+.appointment__phone {
+  padding-bottom: 8px;
+}
+
+.appointment__name {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.appointment__message {
+  display: block;
+  margin-bottom: 44px;
+}
+
+.appointment__name::placeholder,
+.appointment__phone::placeholder,
+.appointment__message,
+.appointment__text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $transparent-text-color;
+}
+
+.appointment__text {
+  padding-top: 15px;
+  padding-bottom: 0;
+  resize: none;
+  color: $lighten-text-color;
+}
+
+.appointment__name:focus,
+.appointment__phone:focus,
+.appointment__text:focus {
+  border-bottom: 1px solid $lighten-text-color;
+  outline: none;
+}
+
+.appointment__message:focus-within {
+  color: $lighten-text-color;
+}
+
+.appointment__name:focus::placeholder,
+.appointment__phone:focus::placeholder {
+  color: $lighten-text-color;
+}

@@ -25,3 +25,12 @@
     background-color: $primary-text-color;
   }
 }
+
+.subtitle--white {
+  color: $lighten-text-color;
+
+  &::before {
+    @extend %subtitle__before;
+    background-color: $transparent-text-color;
+  }
+}

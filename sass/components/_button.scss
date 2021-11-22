@@ -1,8 +1,8 @@
 .button {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 37px;
+  padding-right: 37px;
   display: inline-block;
   border: 1px solid $accent-color;
   border-radius: 25px;
@@ -13,6 +13,12 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -22,4 +28,11 @@
 
 .button--light {
   color: $lighten-text-color;
+}
+
+.button--change-header {
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    color: $lighten-text-color;
+  }
 }
