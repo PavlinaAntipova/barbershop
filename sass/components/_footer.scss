@@ -31,3 +31,12 @@
     padding-right: 255px;
   }
 }
+
+.developing {
+  margin-top: 10px;
+  text-align: center;
+
+  & a {
+    font-weight: 700;
+  }
+}

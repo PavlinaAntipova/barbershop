@@ -1116,6 +1116,15 @@ address {
   }
 }
 
+.developing {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.developing a {
+  font-weight: 700;
+}
+
 @media screen and (max-width: 767px) {
   .appointment {
     text-align: center;
